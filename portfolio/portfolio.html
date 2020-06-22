@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            font-family: 'Varela Round';
+        }
+
+        .masthead {
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 35rem;
+            padding: 15rem 0;
+            background: linear-gradient(to bottom, rgba(22, 22, 22, .3) 0, rgba(22, 22, 22, .7) 75%, #161616 100%), url(../img/bg-masthead.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background: linear-gradient(to bottom, rgba(22, 22, 22, .3) 0, rgba(22, 22, 22, .7) 75%, #161616 100%), url(bg.jpg);
+            background-size: cover;
+            
+        }
+
+        .masthead h1 {
+            font-size: 6.5rem;
+            line-height: 6.5rem;
+            letter-spacing: .8rem;
+            font-family: 'Varela Round';
+        }
+
+
+
+        article,
+        aside,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        nav,
+        section {
+            display: block;
+        }
+
+
+        header {
+            display: block;
+        }
+
+        .navbar {
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #ffffff;
+            text-align: left;
+            background-color: transparent;
+            color: rgba(255, 255, 255, .5);
+        }
+
+        #mainNav {
+            padding-top: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+            background-color: transparent;
+            -webkit-transition: background-color .3s ease-in-out;
+            transition: background-color .3s ease-in-out;
+        }
+
+        .about-section {
+            padding-top: 10rem;
+
+            background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%);
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            
+        }
+
+        body {
+            font-family: "Nunito";
+            letter-spacing: .0625em;
+            font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 400;
+
+        }
+
+        .projects-section {
+            padding: 10rem 0;
+        }
+
+        .h4,
+        h4 {
+            font-size: 1.5rem;
+            color: #161616;
+        }
+
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: .5rem;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        .bg-light {
+            background-color: #f8f9fa;
+        }
+
+        .no-gutters>.col,
+        .no-gutters>[class*=col-] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .projects-section .featured-text {
+            padding: 0 0 0 2rem;
+            border-left: .5rem solid #64a19d;
+        }
+
+        .text-lg-left {
+            text-align: left;
+        }
+
+        .mb-lg-0,
+        .my-lg-0 {
+            margin-bottom: 0;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .projects-section .project-text {
+            padding: 5rem;
+            background-color: #161616;
+        }
+
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        .mb-auto,
+        .my-auto {
+            margin-bottom: auto;
+        }
+
+        .h-100 {
+            height: 100%;
+        }
+
+        .bg-black {
+            background-color: #161616 !important;
+        }
+
+        .contact-section {
+            padding: 10rem 0 0;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        .projects-section {
+            padding: 10rem 0;
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .contact-section .social {
+            margin-top: 5rem;
+        }
+
+        .signup-section {
+            padding: 10rem 0;
+            background: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%), url(foot.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+
+        .article,
+        aside,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        nav,
+        section {
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .contact-section .social {
+            margin-top: 5rem;
+        }
+
+        .justify-content-center {
+            -ms-flex-pack: center !important;
+            justify-content: center !important;
+        }
+
+        .d-flex {
+            color: #161616;
+
+        }
+
+        .signup-section .form-inline input {
+            -webkit-box-shadow: 0 .1875rem .1875rem 0 rgba(0, 0, 0, .1) !important;
+            box-shadow: 0 .1875rem .1875rem 0 rgba(0, 0, 0, .1) !important;
+            padding: 1.25rem 2rem;
+            height: auto;
+            font-family: 'Varela Round';
+            font-size: 80%;
+            text-transform: uppercase;
+            letter-spacing: .15rem;
+
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .ml-auto,
+        .mx-auto {
+            margin-left: auto !important;
+        }
+
+        .mr-auto,
+        .mx-auto {
+            margin right: auto !important;
+
+        }
+
+        .col,
+        .col-1,
+        .col-10,
+        .col-11,
+        .col-12,
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .col-6,
+        .col-7,
+        .col-8,
+        .col-9,
+        .col-auto,
+        .col-lg,
+        .col-lg-1,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-auto,
+        .col-md,
+        .col-md-1,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-auto,
+        .col-sm,
+        .col-sm-1,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-auto,
+        .col-xl,
+        .col-xl-1,
+        .col-xl-10,
+        .col-xl-11,
+        .col-xl-12,
+        .col-xl-2,
+        .col-xl-3,
+        .col-xl-4,
+        .col-xl-5,
+        .col-xl-6,
+        .col-xl-7,
+        .col-xl-8,
+        .col-xl-9,
+        .col-xl-auto {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .contact-section .social a {
+            text-align: center;
+            height: 3rem;
+            width: 3rem;
+            background:burlywood;
+            border-radius: 100%;
+            line-height: 3rem;
+            
+        }
+
+        footer {
+            padding: 5rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Foram Prajapati</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">Drinks. Blog. Code. Design. Digital Marketing. Photography
+                    and lot more...</h2>
+            </div>
+        </div>
+
+    </header>
+    <section id="about" class="about-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4">About me</h2>
+                    <p class="text-white-50">Hello! I'm <b>Foram Prajapati</b> a student of Full Stack Development &
+                        Digital Marketing.
+                        Born in Mumbai, A coffee lover, Mouse clicking coder passionate about creating user friendly
+                        websites and apps.</p>
+                </div>
+            </div>
+            <img src="un.jpg" class="img-fluid" alt="">
+        </div>
+    </section>
+    <section id="projects" class="projects-section bg-light">
+        <div class="container">
+
+            <!-- Featured Project Row -->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7">
+                    <img class="img-fluid mb-3 mb-lg-0" src="tech.jpg" alt="">
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>My Projects</h4>
+                        <p class="text-black-50 mb-0">I like to capture the moment. Over the last years I did a lot
+                            photos. A lot of these are not really valuable but that’s not the point. It’s more like
+                            freezing the moment for later.
+                            Today I do it more „professional“ compared to the early days. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project One Row -->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="tech.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">The Red Bull Project</h4>
+                                <p class="mb-0 text-white-50">The Red Bull World motive was to go online. Revised the
+                                    current website and to promote it into the Responsive. </p>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Two Row -->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="tech.jpg" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Concept: Schwarzkopf</h4>
+                                <p class="mb-0 text-white-50">Concept Design: From a personal point of view, created
+                                    responsiveness in the wesbite.
+
+                                </p>
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <section id="signup" class="signup-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Get in touch!</h2>
+
+                        <form class="form-inline d-flex">
+                            <input type="Name" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail"
+                                placeholder="Full name...">
+                            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail"
+                                placeholder="Enter email address...">
+                            <input type="Message" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
+                                id="inputEmail" placeholder="Enter message...">
+                            <button type="submit" class="btn btn-primary mx-auto">Done</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="contact-section bg-black">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">Mumbai, Maharashtra</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">
+                                    <a href="#">foramprajapati1@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a href="https://www.instagram.com/wandering_diary25/" class="mx-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/foram.prajapati.7549" class="mx-2">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/foram-prajapati-975983114/" class="mx-2">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <footer class="bg-black small text-center text-white-50">
+                    <div class="container">
+                        Copyright © My Website 2019
+                    </div>
+                </footer>
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
